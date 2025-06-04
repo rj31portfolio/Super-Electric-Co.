@@ -575,6 +575,37 @@ img {
 }
 
 /*=== Header Upper ===*/
+.header-upper .logo-outer {
+    flex: 0 0 auto;
+    max-width: 220px; /* Adjust size if needed */
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.upper-right {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 180px;
+}
+
+.logo img {
+    max-width: 120%;
+    height: auto;
+    display: block;
+}
 
 .main-header .header-upper {
     position: relative;
