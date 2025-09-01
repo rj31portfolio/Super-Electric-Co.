@@ -391,8 +391,30 @@ img {
     background-size: 200px;
     background-image: url(../images/icons/preloader.svg);
 }
-
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.img-wrapper img {
+  transition: opacity 0.4s ease-in-out;
+  display: block;
+  width: 100%;
+}
+.img-wrapper img.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.img-wrapper:hover img.hover-img {
+  opacity: 1;
+}
+.img-wrapper:hover img.main-img {
+  opacity: 0;
+}
 /*** 
+
+
 
 ====================================================================
 	Scroll To Top style
